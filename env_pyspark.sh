@@ -6,9 +6,9 @@ if [[ "$(conda env list | grep $env)" != "" ]]; then
     conda remove -n $env
 fi
 
-conda create -y -n $env \
+conda create -y -n $env -c conda-forge \
     python=3.7 ipython \
     loguru \
-    findspark \
+    findspark
 
-conda pack -n $env -o env_$env.tar.gz 
+conda pack -n $env -o /workdir/env_$env.tar.gz
