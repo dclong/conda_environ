@@ -1,7 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "Current user: $(id -un)"
-echo "Docker user: $DOCKER_USER"
 #env=${1:-pyspark_ai}
 env=pyspark_ai
 PATH=/opt/conda/bin:$PATH

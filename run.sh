@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 docker run -it \
     --hostname conda \
@@ -9,4 +9,4 @@ docker run -it \
     -e DOCKER_GROUP_ID=$(id -g) \
     -v "$(pwd)":/workdir \
     -v "$(dirname $HOME)":/home_host \
-    dclong/conda /scripts/sys/init.sh /workdir/script.sh
+    dclong/conda-build:next /scripts/sys/init2.sh -u /workdir/$1
