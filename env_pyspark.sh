@@ -1,4 +1,4 @@
-#!/userr/bin/env bash
+#!/usr/bin/env bash
 
 #env=${1:-pyspark}
 env=pyspark
