@@ -9,4 +9,4 @@ docker run -it \
     -e DOCKER_GROUP_ID=$(id -g) \
     -v "$(pwd)":/workdir \
     -v "$(dirname $HOME)":/home_host \
-    dclong/conda /scripts/sys/init2.sh -u /workdir/$1
+    dclong/conda /scripts/sys/init.sh -u /workdir/$1
